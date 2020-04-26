@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Memory Allocation</title>
+	<link rel="icon" type="image/x-icon" href="MACapture.png">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<center>
+		<div class="heading">
+			<h1>Memory Allocation</h1><br>
+			<h3>By Parth Shah(18BCE219), Shubham Patel(18BCE227)</h3>
+		</div><br>
+		<hr><br>
+
+		<div class="container">
+			<font size="4px">Blocksize:</font>
+			<input type="txt" name="Blocksize" size="40" id="bsize" placeholder="Enter comma seperated values" /><br>
+
+			<font size="4px">Processsize:</font>
+			<input type="txt" name="Processsize" size="40" id="psize"
+				placeholder="Enter comma seperated values" /><br><br>
+
+			<font size="4px">Type of memory Allocation:</font>
+			<div class="dropdown">
+				<select name="fit" id="allfit">
+					<option selected>---Select---</option>
+					<option value="nf">Next Fit</option>
+					<option value="wf">Worst Fit</option>
+					<option value="ff">First Fit</option>
+					<option value="bf">Best Fit</option>
+				</select>
+			</div>
+			<input type="button" value="Confirm" id="button" onclick="arraycall()" />
+		</div><br>
+		<hr><br>
+
+		<div class="answer">
+			<div class="box">
+				<p>Allocation Block wise:</p><br>
+				<p id="optxt1"><output for="optxt1"></output></p>
+			</div>
+			<div class="box">
+				<p>Allocation Process wise:</p><br>
+				<p id="optxt2"><output for="optxt2"></output></p>
+			</div>
+		</div>
+		<br><hr>
+	</center>
+</body>
+
+</html>
+<script src="script.js"></script>
