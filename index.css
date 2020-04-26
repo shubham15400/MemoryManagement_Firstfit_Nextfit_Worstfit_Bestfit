@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes trans{
+    0% {box-shadow: 5px 10px 15px blue;}
+    50% {box-shadow: 5px 10px 15px #a17fe0;}
+    100% {box-shadow: 5px 10px 15px #5D26C1;}
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#FFEB3B, #03A9F4);
+    height: 1000px;
+}
+
+.heading {
+    padding: 30px 0px;
+}
+
+select {
+    width: 200px;
+    height: 30px;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 15px 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    box-shadow: 3px 3px blue;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0 5px 5px;
+    border: solid 1px black;
+    border-radius: 15px 5px;
+    box-shadow: 3px 3px blue;
+    font-size: 18px;
+}
+
+select:hover, input:hover {
+    animation-name: trans;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#button {
+    width: 150px;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #c9c0c0;
+}
+
+.answer {
+    font-size: 25px;
+    border: solid 2px blue;
+    display: flex;
+    padding: 20px;
+}
+
+.box {
+    width: 50%;
+}
+
+#myProgress {
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #ddd;
+    border-top: solid 4px red;
+    border-radius: 10px;
+}
+
+#myBar {
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    background-color: #4CAF50;
+    border: solid 1px black;
+    border-radius: 10px;
+}
